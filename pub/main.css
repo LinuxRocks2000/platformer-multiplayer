@@ -1,0 +1,79 @@
+@keyframes spin {
+    0% {
+        transform: perspective(200px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(200px) rotateY(360deg);
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: white !important;
+}
+
+#game > div {
+    position: absolute;
+}
+
+#game {
+    overflow: hidden;
+}
+
+.normal {
+    background-color: brown;
+}
+
+.player{
+    background-color: green;
+    text-align: center;
+}
+
+.lava {
+    background-color: red;
+}
+
+.coin {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.coin > span {
+    border-radius: 100%;
+    background-color: yellow;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.tencoin > span{
+    padding: 7px;
+}
+
+.fiftycoin > span{
+    padding: 10px;
+}
+
+#startmenu{
+    overflow: hidden;
+}
+
+.jumpthrough{
+    background-color: yellow;
+}
+
+.bomb{
+    background-color: teal;
+}
+
+#
